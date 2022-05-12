@@ -1,6 +1,16 @@
+@import 'normalize.css/normalize';
 @import 'header.scss';
 @import 'about.scss';
 @import 'footer.scss';
 @import 'media.scss';
 @import 'mixins.scss';
 @import 'vars.scss';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+
+  padding: 0 !important;
+  margin: 0 !important;
+}

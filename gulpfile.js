@@ -72,7 +72,9 @@ const pug = () => {
 const scss = () => {
   return gulp.src(paths.styles.src)
     .pipe(sourcemaps.init())
-    .pipe(sass())
+    .pipe(sass({
+      includePaths: ['./node_modules']
+    }))
     .pipe(autoprefixer({
 			cascade: false
 		}))
